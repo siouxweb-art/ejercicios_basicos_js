@@ -84,14 +84,115 @@ function mult (a,b){
     return a * b;
 }
 let resultado = mult (a,b)
-console.log(resultado)
+//console.log(resultado)
 
 //3.2
-const c = 2;
+const k = 2;
 
-function div (a,c){
-    return a / c;
+function div (a,k){
+    return a / k;
 }
-let resultDiv = div(a,c)
-console.log(resultDiv)
+let resultDiv = div(a,k)
+//console.log(resultDiv)
 
+//3.3
+const d = 15;
+const e = 9;
+
+function divis(d,e){
+    return d/e;
+}
+
+let dividir = divis(d,e)
+
+const numE = 1;
+function resto(dividir,numE){
+    return dividir-numE;
+}
+
+let restodiv = resto(dividir,numE)
+
+//console.log(restodiv)
+
+//3.4
+var p = 10;
+var j = 5;
+
+var o = p + j;
+
+//console.log(o)
+
+//3.5
+
+var c = 10;
+var m = 5;
+
+var i = c * m;
+
+//console.log(i)
+
+
+//EJERCICIO 4
+const aldeanos = ["Fibrilio", "Narciso", "Vacarena", "Tendo", "Nendo"];
+//4.1
+console.log(aldeanos[3])
+//4.2
+aldeanos.push("Cervasio");
+//console.log(aldeanos)
+//4.3
+aldeanos[0] = "Bambina";
+//console.log(aldeanos)
+//4.4
+aldeanos.reverse();
+//console.log(aldeanos)
+//4.5
+aldeanos[1] = "Canela";
+//console.log(aldeanos)
+//4.6
+console.log(aldeanos[aldeanos.length - 1]) //aparece Bambina porque anteriormente se ha invertido el orden del array
+
+
+//EJERCICIO5
+const number1 = 10;
+const number2 = 20;
+const number3 = 2;
+
+// ejemplo
+if(number1 === 10){
+    console.log("number1 es estrictamente igual a 10")
+}
+
+if (number2 === 20) {
+  console.log("number2 dividido entre number1 es igual a 2");
+}
+
+if (number1 === !number2) {
+  console.log("number1 es estrictamente distinto a number2");
+}
+
+if (number3 === !number1) {
+  console.log("number3 es distinto number1");
+}
+
+if (number3 === 2) {
+  console.log("number3 por 5 es igual a number1");
+}
+
+if (number3 === 2 && number1 === 10) {
+  console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
+}
+
+if (number2 === 20 || number1 === 10) {
+  console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
+}
+
+
+//EJERCICIO 6
+//6.1
+let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+for (let i=0; i<=9; i++){
+    console.log(numbers[i])
+}
+
+//6.2
