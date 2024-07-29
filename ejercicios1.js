@@ -19,6 +19,8 @@ const suma = calcularSuma (5,10);
 //console.log(miSuperheroeFavorito, miNumeroFavorito, altura, longitud, suma) 
 
 
+//....................................................................................................................................................................................................
+
 //EJERCICIO2
 //2.1
 const jedi = {nombre: "Luke Skywalker", edad: 19};
@@ -74,6 +76,7 @@ let nave1precioFinal = preciofinal (nave1.precioBase,precioBaseGlobal2)
 let nave2precioFinal = preciofinal (nave2.precioBase,precioBaseGlobal2)
 //console.log(nave2precioFinal)
 
+//....................................................................................................................................................................................................
 
 //EJERCICIO 3
 //3.1
@@ -131,11 +134,12 @@ var i = c * m;
 
 //console.log(i)
 
+//....................................................................................................................................................................................................
 
 //EJERCICIO 4
 const aldeanos = ["Fibrilio", "Narciso", "Vacarena", "Tendo", "Nendo"];
 //4.1
-console.log(aldeanos[3])
+//console.log(aldeanos[3])
 //4.2
 aldeanos.push("Cervasio");
 //console.log(aldeanos)
@@ -149,50 +153,116 @@ aldeanos.reverse();
 aldeanos[1] = "Canela";
 //console.log(aldeanos)
 //4.6
-console.log(aldeanos[aldeanos.length - 1]) //aparece Bambina porque anteriormente se ha invertido el orden del array
+//console.log(aldeanos[aldeanos.length - 1]) //aparece Bambina porque anteriormente se ha invertido el orden del array
 
+//....................................................................................................................................................................................................
 
-//EJERCICIO5
+//EJERCICIO 5
 const number1 = 10;
 const number2 = 20;
 const number3 = 2;
 
 // ejemplo
 if(number1 === 10){
-    console.log("number1 es estrictamente igual a 10")
+   // console.log("number1 es estrictamente igual a 10")
 }
 
 if (number2 === 20) {
-  console.log("number2 dividido entre number1 es igual a 2");
+  //console.log("number2 dividido entre number1 es igual a 2");
 }
 
 if (number1 === !number2) {
-  console.log("number1 es estrictamente distinto a number2");
+  //console.log("number1 es estrictamente distinto a number2");
 }
 
 if (number3 === !number1) {
-  console.log("number3 es distinto number1");
+  //console.log("number3 es distinto number1");
 }
 
 if (number3 === 2) {
-  console.log("number3 por 5 es igual a number1");
+  //console.log("number3 por 5 es igual a number1");
 }
 
 if (number3 === 2 && number1 === 10) {
-  console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
+  //console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
 }
 
 if (number2 === 20 || number1 === 10) {
-  console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
+  //console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
 }
 
+
+//....................................................................................................................................................................................................
 
 //EJERCICIO 6
 //6.1
 let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 for (let i=0; i<=9; i++){
-    console.log(numbers[i])
+    //console.log(numbers[i])
 }
 
 //6.2
+const numb = ["0","1","2","3","4","5","6","7","8","9"];
+const numbpar = numb.filter(number => number%2 ===0);
+for (let i=0; i<1; i++){
+  //console.log(numbpar)
+}
+
+//6.3
+const ovejas = "🐑";
+
+for (let i=0; i<9; i++) {
+ // console.log("Intentando dormir" + ovejas)
+}
+//console.log("¡Dormido!")
+
+//....................................................................................................................................................................................................
+
+//EJERCICIO 7
+let numberOne = 7;
+let numberTwo = 8;
+function greaterNumber(numberOne, numberTwo){
+  return numberOne, numberTwo;
+}
+let number = greaterNumber(numberOne, numberTwo);
+if(numberOne>numberTwo){
+ // console.log(numberOne);
+}
+else{
+  //console.log(numberTwo);
+}
+
+//....................................................................................................................................................................................................
+
+//EJERCICIO 8
+
+/*Buscar la palabra más larga: Completa la función que tomando un array de strings como argumento devuelva el más largo, 
++en caso de que dos strings tenga la misma longitud deberá devolver el primero.
+
+Puedes usar este array para probar tu función:*/
+//const avengers = ["Hulk", "Thor", "Iron Man", "Captain A.", "Spiderman", "Captain M."];
+//const stringAvengers = avengers[i];
+//hacer que me devuelva cada elemento del array
+//for (let i=0; i<avengers.length; i++){
+//console.log(avengers[i])}
+
+//function propuesta
+//console.log(stringAvengers);
+//let stringLength = avengers[i];
+//for (let i=0; i<avengers.length; i++){
+
+
+//}
+
+const avengers = ['Hulk', 'Thor', 'Iron Man', 'Captain A.', 'Spiderman', 'Captain M.'];
+for (let i=0; i<avengers.length; i++){
+ let stringList = avengers[i];
+ console.log(stringList.length)
+}
+
+
+//const stringList = avengers[i]
+//function findLongestWord(stringList) {
+  // Completar código
+//}
