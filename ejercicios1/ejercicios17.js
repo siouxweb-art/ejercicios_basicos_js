@@ -10,5 +10,5 @@ const alien = {
 //Debería tener este formato cada uno de los console.log: "La propiedad ____ tiene cómo valor: ____"
 
 for (const key in alien){
-    console.log('La propiedad" ${key} tiene como valor: ${alien[key]}');
+    console.log(`La propiedad ${key} tiene como valor: ${alien[key]}`);
 }
