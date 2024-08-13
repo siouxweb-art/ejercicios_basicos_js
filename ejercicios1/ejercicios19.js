@@ -7,16 +7,14 @@ const toys = [
     {id: 60, name: 'Nerf Blaster'},
     {id: 71, name: 'Sylvanian Families - Familia gato'}
 ];
+  
+  let toysFiltrados = {};
 
-//Mixed For...of e includes: Usa un bucle for...of para recorrer todos los juguetes y elimina los que incluyan la palabra gato 
-//(también podéis crear uno nuevo con solo los que NO incluyan esa palabra).
-//Recuerda usar la función .includes() para comprobar la palabra.
-const toysNoGato = [];
-
-for(const juguete of toys){
-    if (toys.includes('gato')){
-        toysNoGato.push(juguete);
-
+  for (let toy in toys) {
+    if (!toys[toy].name.includes("gato")) {
+      toysFiltrados[toy] = toys[toy];
     }
-}
-console.log(toysNoGato);
+  }
+  
+  console.log(toysFiltrados);
+  
